@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("./assets/destination/background-destination-desktop.jpg");
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+  padding: 1em;
+  align-items: center;
+}
+.links {
+  display: flex;
+  padding: 1.5em;
+  backdrop-filter: blur(10px);
+}
+.links a {
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.links a span {
+  margin-right: 5px;
+}
+.active {
+  border-bottom: 1px solid white;
+}
+main {
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+}
+.heading {
+  margin-left: 50px;
+  color: white;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+.banner {
+  display: block;
+  font-size: 6.2em;
+  text-transform: uppercase;
+  margin: 0.5em 0;
+}
+.left {
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.right {
+  width: 50%;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+h1 {
+  text-align: left;
+}
+p {
+  font-size: 0.8em;
+}
+.link-container {
+  height: 30px;
+  text-align: justify;
+  margin: 0 10px;
+}
+.link-container:hover {
+  border-bottom: 1px solid white;
+}
+.line {
+  background-color: white;
+  width: 80%;
+  height: 1px;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+.info div {
+  margin: 1em;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+.info-distance {
+  font-size: 0.8em;
+}
+.value {
+  font-size: 1.2em;
+}
+.inner-nav-links {
+  display: flex;
+  padding: 1.5em;
+  backdrop-filter: blur(10px);
+}
+.inner-nav-links a {
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.inner-nav-links a span {
+  margin-right: 5px;
+}
+@media screen and (max-width: 450px) {
+  body {
+    background-image: url("./assets/destination/background-destination-mobile.jpg");
+    overflow-y: visible;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  main {
+    height: 100vh;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  .left {
+    height: 500px;
+    background-size: contain;
+  }
+  .heading {
+    font-size: 1em;
+  }
+  .banner {
+    font-size: 4em;
+  }
+  main {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .links {
+    display: none;
+  }
+  .link-container {
+    margin: 10px 0;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+  p {
+    font-size: 0.8em;
+  }
+  .right {
+    width: 100%;
+    padding: 1em;
+  }
+  .icon {
+    padding: 1em;
+    background-repeat: no-repeat;
+    background-image: url("./assets/shared/icon-hamburger.svg");
+  }
+  .active-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -20%);
+    transition: ease-in 1s;
+    z-index: 100;
+  }
+  .icon-active {
+    background-image: url("./assets/shared/icon-close.svg") !important;
+  }
+}

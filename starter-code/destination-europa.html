@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="destination.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="./assets/shared/logo.svg" alt="" />
+      </div>
+      <a href="#" class="hamburger-menu">
+        <span class="icon"></span>
+      </a>
+      <div class="links">
+        <div class="link-container">
+          <a class="nav-links" data-indicator="index" href="./index.html">
+            <span> 00 </span>
+            <span> Home </span>
+          </a>
+        </div>
+        <div class="link-container">
+          <a
+            class="nav-links"
+            data-indicator="destination"
+            href="./destination-europa.html"
+          >
+            <span> 01 </span>
+            <span> Destination </span>
+          </a>
+        </div>
+        <div class="link-container">
+          <a
+            class="nav-links"
+            data-indicator="crew"
+            href="./crew-commander.html"
+          >
+            <span> 02 </span>
+            <span> Crew </span>
+          </a>
+        </div>
+        <div class="link-container">
+          <a
+            class="nav-links"
+            data-indicator="technology"
+            href="./technology-capsule.html"
+          >
+            <span> 03 </span>
+            <span> Technology </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="heading">01 Pick your destination</div>
+    <main>
+      <div
+        class="left"
+        style="background-image: url('./assets/destination/image-europa.webp')"
+      ></div>
+      <div class="right">
+        <div class="inner-nav-links">
+          <div class="link-container">
+            <a
+              class="inner-links"
+              data-indicator="moon"
+              href="./destination-moon.html"
+            >
+              <span> Moon </span>
+            </a>
+          </div>
+          <div class="link-container">
+            <a
+              class="inner-links"
+              data-indicator="mars"
+              href="./destination-mars.html"
+            >
+              <span> Mars </span>
+            </a>
+          </div>
+          <div class="link-container">
+            <a
+              class="inner-links"
+              data-indicator="europa"
+              href="./destination-europa.html"
+            >
+              <span> Europa </span>
+            </a>
+          </div>
+          <div class="link-container">
+            <a
+              class="inner-links"
+              data-indicator="titan"
+              href="./destination-titan.html"
+            >
+              <span> Titan </span>
+            </a>
+          </div>
+        </div>
+        <h1>Europa</h1>
+        <p class="para">
+          The smallest of the four Galilean moons orbiting Jupiter, Europa is a
+          <br />
+          winter lover’s dream. With an icy surface, it’s perfect for a bit of
+          <br />
+          ice skating, curling, hockey, or simple relaxation in your snug <br />
+          wintery cabin.
+        </p>
+        <div class="line"></div>
+        <div class="info">
+          <div>
+            <div class="info-distance">Avg. distance</div>
+            <div class="value">628 mil. km</div>
+          </div>
+          <div>
+            <div class="info-distance">Est. Travel time</div>
+            <div class="value">3 years</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="destination.js"></script>
+  </body>
+</html>
